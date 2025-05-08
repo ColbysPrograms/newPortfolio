@@ -3,12 +3,12 @@ import Title from "./Title"
 
 function Projects() {
   const projects = [
+    { title: "Newton's Method", link: "https://github.com/ColbysPrograms/NewtonPresentation", src: "/newPortfolio/newton.png", alt: "" },
     { title: "Balloon Project", link: "https://github.com/ColbysPrograms/balloonProject", src: "/newPortfolio/balloon.png", alt: "" },
-    { title: "Balloon Project", link: "https://github.com/ColbysPrograms/balloonProject", src: "", alt: "" },
-    { title: "Balloon Project", link: "https://github.com/ColbysPrograms/balloonProject", src: "", alt: "" },
-    { title: "Balloon Project", link: "https://github.com/ColbysPrograms/balloonProject", src: "", alt: "" },
-    { title: "Balloon Project", link: "https://github.com/ColbysPrograms/balloonProject", src: "", alt: "" },
-    { title: "Balloon Project", link: "https://github.com/ColbysPrograms/balloonProject", src: "", alt: "" },
+    { title: "CPU Scheduling", link: "https://github.com/ColbysPrograms/cpuScheduling", src: "/newPortfolio/cpuScheduling.png", alt: "" },
+    { title: "Multivariate Analysis", link: "https://github.com/ColbysPrograms/Multivariate-Analysis-Project", src: "/newPortfolio/KMeans.png", alt: "" },
+    { title: "Monty Hall", link: "https://github.com/ColbysPrograms/MontyHallProgram", src: "/newPortfolio/montyHall.png", alt: "" },
+    { title: "Portfolio", link: "https://github.com/ColbysPrograms/newPortfolio", src: "", alt: "" },
   ]
   const projectPanels = projects.map((item) =>
     <ProjectPanel title={item.title} link={item.link} src={item.src} alt={item.alt}></ProjectPanel>
