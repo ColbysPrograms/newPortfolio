@@ -3,12 +3,12 @@ import Title from "./Title"
 
 function Projects() {
   const projects = [
-    { title: "Balloon Project", link: "https://github.com/ColbysPrograms/balloonProject", src: "/newPortfolio/assets/balloon.png", alt: "" },
-    { title: "Balloon Project", link: "https://github.com/ColbysPrograms/balloonProject", src: "/newPortfolio/assets/balloon.png", alt: "" },
-    { title: "Balloon Project", link: "https://github.com/ColbysPrograms/balloonProject", src: "/newPortfolio/assets/balloon.png", alt: "" },
-    { title: "Balloon Project", link: "https://github.com/ColbysPrograms/balloonProject", src: "/newPortfolio/assets/balloon.png", alt: "" },
-    { title: "Balloon Project", link: "https://github.com/ColbysPrograms/balloonProject", src: "/newPortfolio/assets/balloon.png", alt: "" },
-    { title: "Balloon Project", link: "https://github.com/ColbysPrograms/balloonProject", src: "/newPortfolio/assets/balloon.png", alt: "" },
+    { title: "Balloon Project", link: "https://github.com/ColbysPrograms/balloonProject", src: "/newPortfolio/balloon.png", alt: "" },
+    { title: "Balloon Project", link: "https://github.com/ColbysPrograms/balloonProject", src: "", alt: "" },
+    { title: "Balloon Project", link: "https://github.com/ColbysPrograms/balloonProject", src: "", alt: "" },
+    { title: "Balloon Project", link: "https://github.com/ColbysPrograms/balloonProject", src: "", alt: "" },
+    { title: "Balloon Project", link: "https://github.com/ColbysPrograms/balloonProject", src: "", alt: "" },
+    { title: "Balloon Project", link: "https://github.com/ColbysPrograms/balloonProject", src: "", alt: "" },
   ]
   const projectPanels = projects.map((item) =>
     <ProjectPanel title={item.title} link={item.link} src={item.src} alt={item.alt}></ProjectPanel>
