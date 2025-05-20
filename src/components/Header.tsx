@@ -1,7 +1,7 @@
 function Header() {
   return (
-    <div>
-      <p>Header</p>
+    <div className="mt-10">
+      <p className="text-2xl">My Portfolio</p>
     </div>
   )
 }

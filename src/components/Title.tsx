@@ -5,7 +5,7 @@ interface Props {
 
 function Title({ title }: Props) {
   return (
-    <div className="text-5xl text-center m-10">
+    <div className="text-5xl text-center m-10 flex-1/6">
       <p>{title}</p>
     </div>
   )

@@ -5,7 +5,7 @@ interface Props {
 
 function Button({ text }: Props) {
   return (
-    <div className="bg-sky-400 cursor-pointer m-10 rounded-md p-10 text-2xl">
+    <div className="cursor-pointer text-2xl p-10 m-5 bg-blue-400 rounded-md">
       <p>{text}</p>
     </div>
   )

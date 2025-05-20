@@ -16,9 +16,11 @@ function App() {
   const [page, setPage] = useState(0);
 
   return (
-    <div className="flex">
-      <SidePanel setPage={setPage}></SidePanel>
-      <div className="flex-4/5">
+    <div className="flex bg-white">
+      <div className="flex-1/5">
+        <SidePanel setPage={setPage}></SidePanel>
+      </div>
+      <div id="" className="flex-4/5">
         {pages[page]}
       </div>
     </div>

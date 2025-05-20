@@ -14,9 +14,11 @@ function SidePanel({ setPage }: Props) {
     <Button text="Contact"></Button>,
   ]
   return (
-    <div className="flex-1/5 text-center flex flex-col">
-      <Header></Header>
-      <ul>
+    <div className="text-center flex flex-col min-h-screen">
+      <div className="flex-1/6">
+        <Header></Header>
+      </div>
+      <ul className="flex-2/3">
         {buttons.map((item, index) =>
           <li
             className=""
@@ -27,7 +29,9 @@ function SidePanel({ setPage }: Props) {
           </li>
         )}
       </ul>
-      <Footer></Footer>
+      <div className="flex-1/6">
+        <Footer></Footer>
+      </div>
     </div>
   )
 
