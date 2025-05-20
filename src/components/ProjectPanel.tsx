@@ -1,4 +1,6 @@
 
+import './ProjectPanel.css';
+
 interface Props {
   title: string;
   link: string;
@@ -9,17 +11,15 @@ interface Props {
 
 function ProjectPanel({ title, link, src, alt, text }: Props) {
   return (
-    <a href={link} target="_blank">
-      <div className="text-center bg-blue-400 p-5 rounded-md hover:bg-yellow-300 transition duration-500">
-        <div className="">
-          <p className="text-xl">{title}</p>
-          <img src={src} alt={alt}></img>
+    <div className='unit min-h-80'>
+      <a href={link} target="_blank">
+        <h1 className="text-xl">{title}</h1>
+        <img src={src} alt={alt}></img>
+        <div className='layer'>
+          <p id='description' className=''>{text}</p>
         </div>
-        <div className="opacity-0 hover:opacity-100 transition hover:-translate-y-20 duration-500">
-          <p>{text}</p>
-        </div>
-      </div>
-    </a>
+      </a>
+    </div>
   )
 }
 

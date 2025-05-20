@@ -4,6 +4,7 @@ import Home from "./components/Home";
 import Projects from "./components/Projects";
 import SidePanel from "./components/SidePanel";
 import { useState } from "react";
+import './App.css';
 
 function App() {
   const pages = [
@@ -17,7 +18,7 @@ function App() {
 
   return (
     <div className="flex bg-white">
-      <div className="flex-1/5">
+      <div className="hidden flex-1/5 md:block">
         <SidePanel setPage={setPage}></SidePanel>
       </div>
       <div id="" className="flex-4/5">

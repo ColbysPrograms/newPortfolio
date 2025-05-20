@@ -1,0 +1,44 @@
+.unit {
+  flex-basis: 31%;
+  background: #fff3f3;
+  border-radius: 10px;
+  margin-bottom: 5%;
+  padding: 20px 12px;
+  box-sizing: border-box;
+  transition: 0.5s;
+  position: relative;
+  overflow: hidden;
+}
+
+.layer {
+  background: transparent;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: 1s;
+}
+
+.layer:hover {
+  background: #fff80b;
+}
+
+.layer p {
+  text-align: center;
+  width: 100%;
+  font-weight: 500;
+  color: #000000;
+  font-size: 16px;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  position: absolute;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.layer:hover p {
+  bottom: 40%;
+  opacity: 1;
+}
