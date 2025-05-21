@@ -1,3 +1,4 @@
+/*
 .unit {
   flex-basis: 31%;
   background: #fff3f3;
@@ -41,4 +42,48 @@
 .layer:hover p {
   bottom: 40%;
   opacity: 1;
+}
+*/
+.unit {
+  z-index: 1;
+  position: relative;
+  /*background: #fff3f3;*/
+  padding: 20px 12px;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+}
+
+.layer {
+  z-index: 2;
+  display: flex;
+  /*
+  display: flex;
+  flex-direction: column;
+  justify-content: initial;
+  */
+  position: absolute;
+  top: 0;
+  left: 0;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  background-color: yellow;
+  transition: 0.5s;
+}
+
+.layer p {
+  transition: all 0.5s;
+  transform: translateY(0);
+}
+
+.layer:hover {
+  opacity: 1;
+  /*justify-content: center;*/
+  transition: 0.5s;
+}
+
+.layer:hover p {
+  transform: translateY(20%);
 }

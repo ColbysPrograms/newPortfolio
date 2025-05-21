@@ -17,11 +17,11 @@ function App() {
   const [page, setPage] = useState(0);
 
   return (
-    <div className="flex bg-white">
-      <div className="hidden flex-1/5 md:block">
+    <div className="flex bg-white max-h-screen">
+      <div className="hidden flex-1/5 md:block max-h-screen">
         <SidePanel setPage={setPage}></SidePanel>
       </div>
-      <div id="" className="flex-4/5">
+      <div id="" className="flex-4/5 max-h-screen">
         {pages[page]}
       </div>
     </div>
