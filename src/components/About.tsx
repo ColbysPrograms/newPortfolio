@@ -2,7 +2,7 @@ import Title from "./Title"
 import './About.css'
 
 function About() {
-  const size = '400px';
+  const size = '370px';
   return (
     <div>
       <div className="flex-1/4">
@@ -10,14 +10,16 @@ function About() {
       </div>
       <div className="flex flex-col bg-gray-200 p-5 mr-5 rounded-md">
         <div className="flex mb-3">
-          <img src="/newPortfolio/KMeans.png" height={size} width={size}></img>
+          <img src="/newPortfolio/gta.avif" height={size} width={size}></img>
           <p className="ml-3">
-            I'm currently a Graduate Teaching Assistant for the University of Central Arkansas, where I'm getting my Master's degree in Applied Mathematics. I received my Bachelor's degree in Computer Science from UCA in December 2024. As of Summer 2025, I have assisted with College Algebra and Applied Calculus. I taught for three sessions of College Algebra and Applied Calculus each, writing and reviewing my own presentations for each. My presentations for Applied Calculus were to show computer science students some of the overlap in mathematics and computer science. My presentations were the <i>Balloon Project</i> and <i>Newton's Method</i> projects shown on the Projects page.
+            I'm currently a Graduate Teaching Assistant for the University of Central Arkansas, where I'm getting my Master's degree in Applied Mathematics. I received my Bachelor's degree in Computer Science from UCA in December 2024. As of Summer 2025, I have assisted with College Algebra and Applied Calculus. I taught for three sessions of College Algebra and Applied Calculus each, writing and reviewing my own presentations for each. My presentations for Applied Calculus were to show computer science students some of the overlap in mathematics and computer science. These were the <a href="https://github.com/ColbysPrograms/balloonProject" target="_blank"><i>Balloon Project</i></a> and <a href="https://github.com/ColbysPrograms/NewtonPresentation" target="_blank">Newton's Method</a> projects shown on the Projects page. I've highly enjoyed the process of teaching students about these intersections of knowledge and hope to do the same during the Fall 2025 semester when I will be fully teaching a College Algebra class.
           </p>
         </div>
         <div className="flex">
-          <p className="mr-3">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus.</p>
-          <img src="/newPortfolio/chart.png" height={size} width={size}></img>
+          <p className="mr-3">
+            Outside of my educational career, I have many hobbies both inside and outside of my profession. On the right is an ordered chart of my favorite games. I enjoy a wide variety of genres, and the only real consistency between all of my picks is having a high degree of player expression. Another one of my hobbies is playing music. I performed in the UCA Marching Band and Concert Band for three years playing trumpet, and regularly play my piano. I'd hope to one day incorporate that experience in making my own music, like when I'm improvising on my piano. My least predictable hobby is my love for dance. I've attended dance classes, mainly Zumba, several times a week for years. My final hobby I'd like to share is baking. I love to bake for myself and my family. For Mother's Day, I went home and delivered my homemade chocolate chocolate chunk cookies to my Mom and my grandmothers. I hope this has been enlightening on my interests in and out of my career and given a more full idea of who I am.
+          </p>
+          <img src="/newPortfolio/chart.avif" height={size} width={size}></img>
         </div>
       </div>
       <div className="flex justify-center mt-3">
