@@ -6,7 +6,11 @@ import SidePanel from "./components/SidePanel";
 import { useState } from "react";
 import './App.css';
 
+
+
+
 function App() {
+
   const pages = [
     <Home></Home>,
     <Projects></Projects>,
@@ -15,13 +19,25 @@ function App() {
   ]
 
   const [page, setPage] = useState(0);
+  const [menu, setMenu] = useState(false);
 
+  function Menu() {
+    if (menu) {
+      return <SidePanel setPage={setPage}></SidePanel>
+    }
+  }
   return (
     <div className="flex bg-white max-h-screen">
-      <div className="hidden flex-1/5 md:block max-h-screen">
+      <div className="md:hidden z-50">
+        <i className="fa fa-bars fa-lg absolute top-5 right-5 cursor-pointer" onClick={() => { if (menu) { setMenu(false) } else { setMenu(true) } }}></i>
+      </div>
+      <div className="max-h-screen md:hidden absolute top-0 left-0 bg-white flex justify-center min-w-screen z-10" onClick={() => { setMenu(false) }}>
+        <Menu></Menu>
+      </div>
+      <div className="flex-1/5 max-h-screen hidden md:block">
         <SidePanel setPage={setPage}></SidePanel>
       </div>
-      <div id="" className="flex-4/5 max-h-screen">
+      <div className="md:flex-4/5 max-h-screen">
         {pages[page]}
       </div>
     </div>
