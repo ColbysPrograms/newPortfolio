@@ -34,7 +34,7 @@ function Contact() {
             <input type="text" name="message" required className="border mt-2 mb-5"></input>
           </div>
           <input type="hidden" name="_autoresponse" value="Thank you for sending a message! I'll get back as soon as I can. -Colby Cox"></input>
-          <input type="hidden" name="_next" value="https://colbysprograms.github.io/newPortfolio/thanks.html"></input>
+          <input type="hidden" name="_next" value="https://colbysprograms.github.io/thanks.html"></input>
           <div className="flex justify-center">
             <button type="submit" className="bg-gray-300 max-w-min cursor-pointer py-2 px-5">Send</button>
           </div>
