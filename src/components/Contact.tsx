@@ -15,22 +15,28 @@ function Contact() {
           <a href="tel:8709985066" className="text-blue-700 underline">(870) 998-5066</a>
         </div>
       </div>
-      <div>
-        <form action="186c6d12f611a86ad07a2c26db1158b0" method="POST" className="flex flex-col">
+      <div className="mt-10">
+        <form action="https://formsubmit.co/colby.cox2020@gmail.com" method="POST" className="flex flex-col">
           <input type="text" name="_honey" className="hidden"></input>
           <input type="hidden" name="_captcha" value="false"></input>
-          <div className="flex justify-center">
-            <label>Name:</label>
-            <input type="text" name="name" required className="border"></input>
-            <label>Email: </label>
-            <input type="email" name="email" required className="border"></input>
+          <div className="grid-cols-1 md:grid-cols-2 grid justify-items-center">
+            <div className="flex flex-col">
+              <label>Name:</label>
+              <input type="text" name="name" required className="border"></input>
+            </div>
+            <div className="flex flex-col">
+              <label>Email:</label>
+              <input type="email" name="email" required className="border"></input>
+            </div>
           </div>
-          <div className="flex flex-col">
+          <div className="flex flex-col mx-10">
             <label className="min-h-max">Message: </label>
-            <input type="text" name="message" required className="border py-10"></input>
+            <input type="text" name="message" required className="border mt-2 mb-5"></input>
           </div>
           <input type="hidden" name="_autoresponse" value="Thank you for sending a message! I'll get back as soon as I can. -Colby Cox"></input>
-          <button type="submit">Send</button>
+          <div className="flex justify-center">
+            <button type="submit" className="bg-gray-300 max-w-min cursor-pointer py-2 px-5">Send</button>
+          </div>
         </form>
       </div>
     </div>
