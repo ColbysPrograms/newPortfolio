@@ -5,12 +5,10 @@ function About() {
   const size = '370px';
   return (
     <div>
-      <div className="flex-1/4">
-        <Title title="About Me"></Title>
-      </div>
-      <div className="flex flex-col bg-gray-200 p-5 mr-5 rounded-md">
+      <Title title="About Me"></Title>
+      <div className="flex flex-col bg-gray-200 p-5 mx-5 rounded-md">
         <div className="lg:flex mb-3 justify-center">
-          <div className="flex justify-center min-w-max">
+          <div className="flex justify-center md:min-w-max">
             <img src="gta.avif" height={size} width={size}></img>
           </div>
           <p className="lg:ml-3">
@@ -21,7 +19,7 @@ function About() {
           <p className="lg:mr-3">
             Outside of my educational career, I have many hobbies both inside and outside of my profession. On the right is an ordered chart of my favorite games. I enjoy a wide variety of genres, and the only real consistency between all of my picks is having a high degree of player expression. Another one of my hobbies is playing music. I performed in the UCA Marching Band and Concert Band for three years playing trumpet, and regularly play my piano. I'd hope to one day incorporate that experience in making my own music, like when I'm improvising on my piano. My least predictable hobby is my love for dance. I've attended dance classes, mainly Zumba, several times a week for years. My final hobby I'd like to share is baking. I love to bake for myself and my family. For Mother's Day, I went home and delivered my homemade chocolate chocolate chunk cookies to my Mom and my grandmothers. I hope this has been enlightening on my interests in and out of my career and given a more full idea of who I am.
           </p>
-          <div className="min-w-max flex justify-center">
+          <div className="flex justify-center md:min-w-max">
             <img src="chart.avif" height={size} width={size}></img>
           </div>
         </div>

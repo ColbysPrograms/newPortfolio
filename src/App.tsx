@@ -27,11 +27,11 @@ function App() {
     }
   }
   return (
-    <div className="flex bg-white max-h-screen">
+    <div className="flex bg-white">
       <div className="md:hidden z-50">
-        <i className="fa fa-bars fa-lg absolute top-5 right-5 cursor-pointer" onClick={() => { if (menu) { setMenu(false) } else { setMenu(true) } }}></i>
+        <i className="fa fa-bars fa-lg fixed top-5 right-5 cursor-pointer" onClick={() => { if (menu) { setMenu(false) } else { setMenu(true) } }}></i>
       </div>
-      <div className="max-h-screen md:hidden absolute top-0 left-0 bg-white flex justify-center min-w-screen z-10" onClick={() => { setMenu(false) }}>
+      <div className="max-h-dvh md:hidden fixed top-0 left-0 bg-white flex justify-center min-w-screen z-10" onClick={() => { setMenu(false) }}>
         <Menu></Menu>
       </div>
       <div className="flex-1/5 max-h-screen hidden md:block">
