@@ -25,7 +25,7 @@ function About() {
         </div>
       </div>
       <div className="flex justify-center mt-3">
-        <a href="resume.pdf" target="_blank" download="Colby Cox's Resume" className="">
+        <a href="resume.pdf" target="_blank" download="Colby Cox's Resume">
           <p className="text-4xl">Download Resume</p>
         </a>
       </div>
