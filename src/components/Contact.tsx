@@ -2,8 +2,10 @@ import Title from "./Title"
 
 function Contact() {
   return (
-    <div className="min-h-screen">
-      <Title title="Contact"></Title>
+    <div className="min-h-screen overflow-hidden min-w-screen md:min-w-0">
+      <div>
+        <Title title="Contact"></Title>
+      </div>
       <p className="text-center">You can reach me at:</p>
       <div className="flex justify-center">
         <p className="mr-0.5">My Email: </p>
@@ -17,19 +19,19 @@ function Contact() {
         <form action="https://formsubmit.co/colby.cox2020@gmail.com" method="POST" className="flex flex-col">
           <input type="text" name="_honey" className="hidden"></input>
           <input type="hidden" name="_captcha" value="false"></input>
-          <div className="grid-cols-1 md:grid-cols-2 grid justify-items-center">
-            <div className="flex flex-col">
+          <div className="grid grid-cols-1 md:grid-cols-2 mx-10">
+            <div className="flex flex-col md:mr-2">
               <label>Name:</label>
-              <input type="text" name="name" required className="border"></input>
+              <input type="text" name="name" required className="border mt-1"></input>
             </div>
-            <div className="flex flex-col">
+            <div className="flex flex-col md:ml-2">
               <label>Email:</label>
-              <input type="email" name="email" required className="border"></input>
+              <input type="email" name="email" required className="border mt-1"></input>
             </div>
           </div>
           <div className="flex flex-col mx-10">
             <label className="min-h-max">Message: </label>
-            <input type="text" name="message" required className="border mt-2 mb-5"></input>
+            <textarea name="message" required className="border overflow-scroll h-50 mt-1 mb-5"></textarea>
           </div>
           <input type="hidden" name="_autoresponse" value="Thank you for sending a message! I'll get back as soon as I can. -Colby Cox"></input>
           <input type="hidden" name="_next" value="https://colbysprograms.github.io/thanks.html"></input>
